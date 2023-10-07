@@ -1,6 +1,14 @@
-class carro:
-    pneus = 4 #atributos de classe
+class turma:
+    def __init__(self, nome, sobrenome):
+        self.nome = nome
+        self.sobrenome = sobrenome
     
-    def __init__(self, marca, modelo):
-        self.marca = marca
-        self.modelo = modelo
+    def texto(self):
+        print(F"o meu nome é {self.nome} e meu sobrenome é {self.sobrenome} ")
+
+aluno1 = turma ("Carlos", "Gabriel",)
+
+print(aluno1.nome)
+print(aluno1.sobrenome)
+
+aluno1.texto()
